@@ -20,8 +20,8 @@ class App extends Component {
 
   getStreamers () {
     const url = 'https://api.twitch.tv/kraken/users?login=dallas,dallasnchains'
-    let userData = []
-    let streamData = []
+    const userData = []
+    const streamData = []
     users.forEach(user => {
       fetch(`${url}/users/${user}`)
         .then(response => response.json())
@@ -37,6 +37,7 @@ class App extends Component {
       streamData: [...streamData]
     })
   }
+
   render () {
     const { userData, streamData } = this.state
     return (

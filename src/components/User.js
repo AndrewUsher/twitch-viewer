@@ -53,7 +53,7 @@ class User extends Component {
             <h4>{stream}</h4>
           </div>
         </div>
-        <div className={online ? "circle online" : "circle offline"} />
+        <div className={online ? 'circle online' : 'circle offline'} />
       </div>
     )
   }
